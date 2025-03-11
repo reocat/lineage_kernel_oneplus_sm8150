@@ -39,7 +39,7 @@ jobs:
           sudo apt install aria2 binutils make python3 libssl-dev build-essential bc  bison flex unzip libssl-dev ca-certificates xz-utils mkbootimg cpio device-tree-compiler git git-lfs -y
           rm -rf KernelSU
           rm -rf drivers/kernelsu
-          aria2c -j$(nproc --all) $(curl -fsSL https://github.com/ZyCromerZ/Clang/raw/main/Clang-11-link.txt)
+          aria2c -j$(nproc --all) $(curl -fsSL https://github.com/ZyCromerZ/Clang/raw/main/Clang-10-link.txt)
           mkdir zyc-clang
           tar -xzvf Clang-*.tar.gz -C zyc-clang >> /dev/null
           git clone https://github.com/osm0sis/AnyKernel3
