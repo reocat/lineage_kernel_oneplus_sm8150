@@ -1017,6 +1017,8 @@ ifeq ($(CONFIG_RELR),y)
 LDFLAGS_vmlinux	+= --pack-dyn-relocs=relr
 endif
 
+DTC_FLAGS += -W no-unit_address_vs_reg -W no-simple_bus_reg -W no-unit_address_format -W no-avoid_unnecessary_addr_size
+
 # Default kernel image to build when no specific target is given.
 # KBUILD_IMAGE may be overruled on the command line or
 # set in the environment
